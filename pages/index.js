@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <p>Hello World!</p>
+    <div className="flex justify-center">
+      <p>Hello World!</p>
+    </div>
   )
 }
