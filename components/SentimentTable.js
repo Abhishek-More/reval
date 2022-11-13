@@ -53,8 +53,8 @@ export default function SentimentTable(props) {
         <a className="text-lg font-semibold px-6 py-2 mt-2 font-OP">Keyword</a>
         <p className="text-lg font-semibold px-6 py-2 mt-2 font-OP">Sentiment</p>
       </div>
-      {getSentiments(props.data, positive).map((sent) => 
-        <Link id={uuidv4()} href={`/dashboard/${props.data.dataset_key}/?tag=${sent.keyword}`}>
+      {getSentiments(props.data, positive).map((sent, index) => 
+        <Link id={index} href={`/dashboard/${props.data.dataset_key}/?tag=${sent.keyword}`}>
         <div className="flex justify-between border-b-2 border-gray-200">
           <a className="text-lg px-6 py-2 mt-2 font-OP">{sent.keyword}</a>
           <p className="text-md px-6 py-2 mt-2 font-OP">{sent.sentiment}</p>
