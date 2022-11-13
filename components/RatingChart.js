@@ -5,6 +5,8 @@ export default function RatingChart(props) {
   
   if(!props.data) {
     return <p>No Data</p>
+  } else {
+    console.log(props.data)
   }
 
   let data = props.data
@@ -28,8 +30,6 @@ export default function RatingChart(props) {
 
     }
 
-    console.log(res);
-
     return res;
   }
 
@@ -49,7 +49,7 @@ export default function RatingChart(props) {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid strokeDasharray="1 3" />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />

@@ -8,12 +8,14 @@ export default function ReviewStream(props) {
 
   let reviewArr = []
 
+  let reviewList = props.reviews
+
   props.reviews.forEach(review => {
     reviewArr.push(<Review key={review.reviewer_id} review={review}/>)
   }); 
 
   return (
-    <div className="px-32">
+    <div className="px-16">
       {reviewArr}
     </div>
   )

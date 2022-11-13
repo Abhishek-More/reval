@@ -10,7 +10,7 @@ export default function DashNavbar() {
   const [selected, setSelected] = useState("overview")
 
   return (
-    <div className="sticky left-0 top-0 h-screen w-[250px] pt-8 pl-10 border-r-2 border-gray-100">
+    <div className="fixed left-0 top-0 h-screen w-[250px] pt-8 pl-10 border-r-2 border-gray-100">
       <p className='text-2xl font-OP text-primary-blue font-bold flex-grow-0'>ReVal</p>
       <div className="mt-32">
         <div className="flex items-center bg-gray-200 pl-2 pr-4 py-2 mr-4 my-4 text-left rounded-md cursor-pointer">

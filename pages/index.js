@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Navbar></Navbar>
-      <div className="absolute right-0 top-0 -z-50 w-1/3 h-screen bg-gradient-to-br from-[#53E0FF] to-[#8CA4F8]"></div>
+      <div className="absolute right-0 top-0 z-10 w-1/3 h-screen bg-gradient-to-br from-[#53E0FF] to-[#8CA4F8]"></div>
       <div className="ml-32 mt-32">
         <div className="text-7xl text-[#4361EE] font-semibold">
         <p>Customer Analytics </p>
@@ -21,8 +21,8 @@ export default function Home() {
         </div>
 
         <div className="flex w-2/5 items-center pt-8 mt-8">
-        <a className="bg-[#4361EE] font-medium text-md text-white px-16 py-4 rounded-lg">Upload CSV</a>
-        <a className="bg-white border-2 ml-8 border-[#4361EE] font-medium placeholder:text-md text-[#4361EE] px-16 py-4 rounded-lg">Review Data</a>
+        <Link href="/upload" className="bg-[#4361EE] font-medium text-md text-white px-16 py-4 rounded-lg">Upload CSV</Link>
+        <Link href="/dashboard/none" className="bg-white border-2 ml-8 border-[#4361EE] font-medium placeholder:text-md text-[#4361EE] px-16 py-4 rounded-lg">Review Data</Link>
         </div>
       </div>
       
