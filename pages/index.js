@@ -1,11 +1,11 @@
 import Navbar from "../components/Navbar"
+import Link from "next/link"
 
 export default function Home() {
   return (
     <>
       <Navbar></Navbar>
       <div className="absolute right-0 top-0 -z-50 w-1/3 h-screen bg-gradient-to-br from-[#53E0FF] to-[#8CA4F8]"></div>
-
       <div className="ml-32 mt-32">
         <div className="text-7xl text-[#4361EE] font-semibold">
         <p>Customer Analytics </p>
