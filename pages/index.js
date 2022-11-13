@@ -20,7 +20,7 @@ export default function Home() {
           <p>analysis tool for your reviews in one click</p>
         </div>
 
-        <div className="flex w-2/5 items-center pt-8 mt-10">
+        <div className="flex w-2/5 items-center pt-8 mt-8">
         <a className="bg-[#4361EE] font-medium text-md text-white px-16 py-4 rounded-lg">Upload CSV</a>
         <a className="bg-white border-2 ml-8 border-[#4361EE] font-medium placeholder:text-md text-[#4361EE] px-16 py-4 rounded-lg">Review Data</a>
         </div>
