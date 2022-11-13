@@ -4,14 +4,15 @@ export default function Home() {
   return (
     <>
       <Navbar></Navbar>
-      <div className="text-7xl ml-16 text-lime-600 font-semibold mt-8">
+      <div className="absolute right-0 top-0 -z-50 w-1/3 h-screen bg-gradient-to-br from-[#C4EFC5] to-[#E2EDA7]"></div>
+      <div className="text-7xl indent-20 text-lime-600 font-semibold">
       <p>Customer Analytics </p>
       <p>Beautified.</p>
       </div>
 
-      <div className="text-3xl ml-16 text-lime-900 mt-8">
-      <p>Discover a powerful sentiment </p>
-      <p>analysis tool for your reviews in one click</p>
+      <div className="text-3xl ml-16 text-lime-900">
+        <p>Discover a powerful sentiment </p>
+        <p>analysis tool for your reviews in one click</p>
       </div>
 
       
