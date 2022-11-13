@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { useState } from 'react';
 import { CircularProgressbar, buildStyles} from 'react-circular-progressbar';
+import { v4 as uuidv4 } from 'uuid';
 import 'react-circular-progressbar/dist/styles.css';
 import Link from 'next/link';
 
@@ -53,7 +54,7 @@ export default function SentimentTable(props) {
         <p className="text-lg font-semibold px-6 py-2 mt-2 font-OP">Sentiment</p>
       </div>
       {getSentiments(props.data, positive).map((sent) => 
-        <Link href={`/dashboard/${props.data.dataset_key}/?tag=${sent.keyword}`}>
+        <Link id={uuidv4()} href={`/dashboard/${props.data.dataset_key}/?tag=${sent.keyword}`}>
         <div className="flex justify-between border-b-2 border-gray-200">
           <a className="text-lg px-6 py-2 mt-2 font-OP">{sent.keyword}</a>
           <p className="text-md px-6 py-2 mt-2 font-OP">{sent.sentiment}</p>

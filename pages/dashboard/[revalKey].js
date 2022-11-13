@@ -232,7 +232,7 @@ export default function Dashboard() {
       <Input id="searcher" placeholder='Fuzzy Search' onKeyDown={() => handleKeyDown(event, document.getElementById("searcher").value)} className="px-6 py-2 appearance-none rounded-md bg-red border-2"></Input>
       <div className="flex gap-4 mt-4">
         {stack.map((keyword, index) => 
-          <div onClick={() => handleDelTag(index)}className="flex items-center gap-2 pl-4 pr-2 py-2 bg-primary-blue text-white rounded-md cursor-pointer">
+          <div key={index} onClick={() => handleDelTag(index)}className="flex items-center gap-2 pl-4 pr-2 py-2 bg-primary-blue text-white rounded-md cursor-pointer">
             <p>#{keyword}</p>
             <FiDelete />
           </div>
