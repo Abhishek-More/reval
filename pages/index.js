@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <>
       <Navbar></Navbar>
-      <div className="absolute right-32 z-50 mt-40"> 
+      <div className="absolute right-32 z-50 mt-40 shadow-lg rounded-md"> 
       <Image 
-        src="/star.png"
+        src="/chart.png"
         alt="Picture of the author"
         width={500}
         height={500}
@@ -31,7 +31,7 @@ export default function Home() {
        
 
         <div className="flex w-2/5 items-center pt-8 mt-8">
-        <Link href="/upload" className="bg-[#4361EE] font-medium text-md text-white px-16 py-4 rounded-lg">Upload CSV</Link>
+        <Link href="/upload" className="bg-[#4361EE] font-medium text-md text-white px-16 py-4 rounded-lg">Upload Reviews</Link>
         <Link href="/dashboard/none" className="bg-white border-2 ml-8 border-[#4361EE] font-medium placeholder:text-md text-[#4361EE] px-16 py-4 rounded-lg">Review Data</Link>
         </div>
       </div>
